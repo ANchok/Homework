@@ -8,4 +8,4 @@ while i < len(my_list):
         break
     else:
         print(my_list[i])
-        i = i + 1
+    i = i + 1

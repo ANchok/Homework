@@ -14,14 +14,17 @@ def string_info(string):
 
 def is_contains(string, list_to_search):
     count_calls()
-    if string in list_to_search:
+    list_lower = []
+    for i in list_to_search:
+        list_lower.append(i.lower())
+    if string.lower() in list_lower:
         return True
     else:
         return False
 
 
-string_info('Произвольные слова где-то')
-string_info('Kate Bakket')
-is_contains('Kate', ['Kate', 'Richard', 'Skye'])
-is_contains('Jonny', ['Kate', 'Richard', 'Skye'])
+print(string_info('Spider-man'))
+print(string_info('KateBakket'))
+print(is_contains('kate', ['Kate', 'Richard', 'Skye']))
+print(is_contains('Jonny', ['Kate', 'Richard', 'Skye']))
 print(calls)

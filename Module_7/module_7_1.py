@@ -1,6 +1,3 @@
-from pprint import pprint
-
-
 class Shop:
     def __init__(self, file_name='products.txt'):
         self.__file_name: str = file_name

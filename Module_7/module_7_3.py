@@ -12,9 +12,9 @@ class WordsFinder:
                 text = ''
                 for line in file:
                     text += line.lower()
-                    for char in line.lower():
-                        if char in self.delete_symbols:
-                            text = text.replace(char, '')
+                    for symbol in self.delete_symbols:
+                        if symbol in text:
+                            text = text.replace(symbol, '')
                 words = text.split()
             all_words[name] = words
         return all_words
